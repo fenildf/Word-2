@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:text="单词在线查询"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:editable="false"/>
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询的单词"/>
+    <Button
+        android:id="@+id/chaxunfeomnet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"/>
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

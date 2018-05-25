@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etWord"
+        android:layout_alignBottom="@+id/etWord"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/etWord"
+
+        android:onClick="searchWord"
+        android:text="查询" />
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/etWord"
+        android:layout_below="@+id/etWord"
+        android:layout_marginTop="22dp"
+        android:textSize="25sp"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/etWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:background="@android:drawable/edit_text"
+        android:ems="10"
+
+        android:singleLine="true"
+        android:textColor="#552006"
+        android:textColorHint="#782f10" />
+
+</RelativeLayout>
